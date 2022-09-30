@@ -44,7 +44,24 @@ class MainActivity : AppCompatActivity() {
                 val user = auth.currentUser
                 updateLoggedUser(user)
             }else{
-                Toast.makeText(baseContext, "Fallo", Toast.LENGTH_LONG).show()
+                Toast.makeText(baseContext, "Fallo al registrar usuario", Toast.LENGTH_LONG).show()
+                updateLoggedUser(null)
+            }
+        }
+    }
+
+    private fun loginUser() {
+        // Se recupera información de autentificación
+        val email = binding.etEmail.text.toString()
+        val pass = binding.etPass.text.toString()
+
+        // Se realiza el registro mediante Firebase
+        auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(this){task->
+            if(task.isSuccessful){
+                val user = auth.currentUser
+                updateLoggedUser(user)
+            }else{
+                Toast.makeText(baseContext, "Fallo al ingresar usuario", Toast.LENGTH_LONG).show()
                 updateLoggedUser(null)
             }
         }
@@ -58,7 +75,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun loginUser() {
-        TODO("Not yet implemented")
+    // Verificación de usuarios autenticados
+    public override fun onStart() {
+        super.onStart()
+        updateLoggedUser(auth.currentUser)
     }
+
 }
