@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="ui.lugar.AddLugarFragment">
+
+    <EditText
+        android:id="@+id/et_place_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/msg_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_email_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/msg_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_phone_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/msg_phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/et_web_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/msg_web"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_add_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_add_place" />
+</LinearLayout>
