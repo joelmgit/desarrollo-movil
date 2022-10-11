@@ -9,16 +9,16 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 @Entity(tableName="lugar")
 data class Lugar(
-  @PrimaryKey(autoGenerate = false)
+  @PrimaryKey(autoGenerate = true)
   val id: Int,
   @ColumnInfo(name="nombre")
   val nombre: String,
   @ColumnInfo(name="correo")
   val correo: String?,
-  @ColumnInfo(name="telefono")
-  val telefono: String?,
   @ColumnInfo(name="web")
   val web: String?,
+  @ColumnInfo(name="telefono")
+  val telefono: String?,
   @ColumnInfo(name="latitud")
   val latitud: Double?,
   @ColumnInfo(name="longitud")
@@ -28,5 +28,5 @@ data class Lugar(
   @ColumnInfo(name="ruta_audio")
   val rutaAudio: String?,
   @ColumnInfo(name="ruta_imagen")
-  val rutaImagen: String?
+  val rutaimagen: String?
 ) : Parcelable

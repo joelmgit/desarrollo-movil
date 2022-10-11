@@ -21,6 +21,8 @@
     <string name="msg_phone">Telefono (88888888)</string>
     <string name="msg_web">Sitio web</string>
     <string name="msg_add_place">Agregar lugar</string>
+    <string name="msg_update_place">Actualizar lugar</string>
     <string name="msg_added_place">Lugar agregado</string>
+    <string name="msg_updated_place">Lugar modificado</string>
     <string name="msg_missing_data">Datos faltantes</string>
 </resources>
