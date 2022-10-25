@@ -25,4 +25,24 @@
     <string name="msg_added_place">Lugar agregado</string>
     <string name="msg_updated_place">Lugar modificado</string>
     <string name="msg_missing_data">Datos faltantes</string>
+
+    <string name="msg_delete_place">Eliminar lugar</string>
+    <string name="msg_deleted_place">Lugar elimindao</string>
+    <string name="msg_ask_to_delete">¿Seguro desea eliminar el lugar?</string>
+
+    <string name="msg_si">Si</string>
+    <string name="msg_no">No</string>
+
+    <string name="msg_enviar_correo">Enviar correo electrónico</string>
+    <string name="msg_phone_call">Realizar llamada telefónica</string>
+    <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
+    <string name="msg_web_view">Abrir sitio Web</string>
+    <string name="msg_map_view">Ver lugar en mapa</string>
+    <string name="tv_latitud_lb">Latitud</string>
+    <string name="tv_longitud_lb">Longitud</string>
+    <string name="tv_altura_lb">Altura</string>
+    <string name="msg_saludos">Saludos amigos</string>
+    <string name="msg_mensaje_correo">Le escribo este correo para</string>
+    <string name="error">Error</string>
+
 </resources>
